@@ -12,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MainApp"
         tools:targetApi="31">
+        <activity
+            android:name=".LayoutViews.FrameTask"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutViews.ConstraintTask"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutViews.LinearTask"
+            android:exported="false" />
 
+        <activity
+            android:name=".LayoutViews.LayoutTasks"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
