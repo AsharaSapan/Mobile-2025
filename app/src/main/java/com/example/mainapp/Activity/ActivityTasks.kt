@@ -1,4 +1,4 @@
-package com.example.mainapp
+package com.example.mainapp.Activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,18 +7,23 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.mainapp.Activity.ActivityTasks
-import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.LayoutViews.LayoutTasks
+import com.example.mainapp.R
 
-class MainActivity : AppCompatActivity() {
+class ActivityTasks : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val ButtonOne: Button= findViewById(R.id.activity)
+
+        setContentView(R.layout.activity_tasks)
+        val ButtonOne: Button = findViewById(R.id.logcat)
         ButtonOne.setOnClickListener {
-            val intent1 = Intent(this, ActivityTasks::class.java)
+            val intent1 = Intent(this, LogcatTask::class.java)
             startActivity(intent1)
+        }
+        val ButtonTwo: Button = findViewById(R.id.dataget)
+        ButtonTwo.setOnClickListener {
+            val intent2 = Intent(this, DataGet::class.java)
+            startActivity(intent2)
         }
     }
 }
