@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MainApp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Drawables.DrawablesTasks"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
