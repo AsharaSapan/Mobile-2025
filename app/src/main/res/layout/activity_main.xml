@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/activity"
         android:layout_width="match_parent"
@@ -27,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="Drawables"
         app:layout_constraintTop_toBottomOf="@+id/layout_views" />
+    <Button
+        android:id="@+id/dimension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dimensions"
+        app:layout_constraintTop_toBottomOf="@+id/drawables" />
 </androidx.constraintlayout.widget.ConstraintLayout>

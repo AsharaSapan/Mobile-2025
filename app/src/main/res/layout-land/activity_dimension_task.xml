@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DimensionTask">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/netflix_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/netflix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="5dp" />
+
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author_name"
+            android:textSize="@dimen/small"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/netflix_logo"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quote"
+            android:textSize="@dimen/small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/author_name"
+            app:layout_constraintVertical_bias="0.091"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/topic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/topic_header"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/paragraph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/paragraph1"
+                android:textSize="@dimen/small"
+                app:layout_constraintTop_toBottomOf="@+id/topic_header"
+                tools:layout_editor_absoluteX="5dp" />
+
+            <ImageView
+                android:id="@+id/blog_1"
+                android:layout_width="261dp"
+                android:layout_height="165dp"
+                android:src="@drawable/blog_1"
+                app:layout_constraintTop_toBottomOf="@+id/paragraph1"
+                tools:layout_editor_absoluteX="5dp" />
+
+            <TextView
+                android:id="@+id/paragraph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/paragraph2"
+                android:textSize="@dimen/small"
+                app:layout_constraintTop_toBottomOf="@+id/blog_1"
+                tools:layout_editor_absoluteX="5dp" />
+
+            <ImageView
+                android:id="@+id/blog_2"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/blog_2"
+                app:layout_constraintTop_toBottomOf="@id/paragraph2" />
+
+            <TextView
+                android:id="@+id/paragraph3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/paragraph3"
+                android:textSize="@dimen/small"
+                app:layout_constraintTop_toBottomOf="@+id/blog_2" />
+
+            <ImageView
+                android:id="@+id/blog_3"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/blog_3"
+                app:layout_constraintTop_toBottomOf="@id/paragraph3" />
+
+            <TextView
+                android:id="@+id/paragraph4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/paragraph4"
+                android:textSize="@dimen/small"
+                app:layout_constraintTop_toBottomOf="@+id/blog_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constrainedWidth="true"
+            android:text="@string/comments"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/comment_1"
+            android:id="@+id/image_comment1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comments"
+            />
+
+        <TextView
+            android:id="@+id/comment_1"
+            android:layout_width="167dp"
+            android:layout_height="60dp"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            android:text="@string/comment_1"
+            app:layout_constraintBottom_toBottomOf="@id/image_comment1"
+            app:layout_constraintLeft_toRightOf="@id/image_comment1"
+            tools:ignore="MissingConstraints"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/comment_2"
+            android:id="@+id/image_comment2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_comment1"
+            />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="56dp"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            android:text="@string/comment_2"
+            app:layout_constraintBottom_toBottomOf="@id/image_comment2"
+
+            app:layout_constraintLeft_toRightOf="@id/image_comment1"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
