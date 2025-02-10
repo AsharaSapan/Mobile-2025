@@ -27,4 +27,11 @@
         android:layout_height="wrap_content"
         android:text="Drawables"
         app:layout_constraintTop_toBottomOf="@+id/layout_views" />
+
+    <Button
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viewpager"
+        app:layout_constraintTop_toBottomOf="@+id/drawables" />
 </androidx.constraintlayout.widget.ConstraintLayout>
