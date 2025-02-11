@@ -10,10 +10,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val buttonFive:Button=findViewById(R.id.dimension)
-        buttonFive.setOnClickListener {
+
+        val dimensionButton:Button=findViewById(R.id.dimension)
+        dimensionButton.setOnClickListener {
             val intent5=Intent(this,DimensionTask::class.java)
             startActivity(intent5)
         }
+
     }
 }
