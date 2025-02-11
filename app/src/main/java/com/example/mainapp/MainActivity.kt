@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,6 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val selectorButton:Button = findViewById(R.id.selector)
+        selectorButton.setOnClickListener {
+            val intent4=Intent(this,DrawableSelectorTask ::class.java)
+            startActivity(intent4)
+        }
+        
         val buttonOne: Button = findViewById(R.id.activity)
         buttonOne.setOnClickListener {
             val intent1 = Intent(this, ActivityTasks::class.java)
