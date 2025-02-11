@@ -5,39 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".LayoutViews.LayoutTasks">
 
     <Button
-        android:id="@+id/activity"
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity"
+        android:text="LinearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/layout_views"
+        android:id="@+id/constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LayoutViews"
-        app:layout_constraintTop_toBottomOf="@+id/activity" />
+        android:text="ConstraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
     <Button
-        android:id="@+id/drawables"
+        android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Drawables"
-        app:layout_constraintTop_toBottomOf="@+id/layout_views" />
-    <Button
-        android:id="@+id/dimension"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dimensions" />
-  
-    <Button
-        android:id="@+id/selector"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Drawable Selector"
-        app:layout_constraintTop_toBottomOf="@+id/drawables" />
+        android:text="FrameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraint" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

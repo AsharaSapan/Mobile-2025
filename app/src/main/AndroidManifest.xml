@@ -16,6 +16,39 @@
             android:name=".DimensionTask"
             android:exported="false" />
         <activity
+            android:name=".Selector_Tasks.DrawableSelectorTask"
+            android:exported="false" />
+         <activity
+            android:name=".Drawables.DrawablesTasks"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutViews.FrameTask"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutViews.ConstraintTask"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutViews.LinearTask"
+            android:exported="false" />
+
+        <activity
+            android:name=".LayoutViews.LayoutTasks"
+            android:exported="false" />
+      
+        <activity
+            android:name=".Activity.DataSend"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.LogcatTask"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityTasks"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DataGet"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
