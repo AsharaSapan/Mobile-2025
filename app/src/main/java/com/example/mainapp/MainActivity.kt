@@ -10,8 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val buttonOne:Button = findViewById(R.id.selector)
-        buttonOne.setOnClickListener {
+
+        val selectorButton:Button = findViewById(R.id.selector)
+        selectorButton.setOnClickListener {
             val intent4=Intent(this,DrawableSelectorTask ::class.java)
             startActivity(intent4)
         }
