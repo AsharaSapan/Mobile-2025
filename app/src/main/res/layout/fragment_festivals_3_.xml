@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".Festivals_3_Fragment">
 
-    <androidx.viewpager2.widget.ViewPager2
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager_vertical2"
-        android:orientation="vertical"
+        android:src="@drawable/festival_3"
+        android:id="@+id/festival_3"
+        android:scaleType="fitXY"
+
         />
 </FrameLayout>

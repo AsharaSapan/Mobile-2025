@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".Car_2_Fragment">
 
-    <androidx.viewpager2.widget.ViewPager2
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager_vertical2"
-        android:orientation="vertical"
+        android:src="@drawable/car_2"
+        android:id="@+id/car_2"
+        android:scaleType="fitXY"
+
         />
+
 </FrameLayout>
