@@ -7,11 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Activity"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,18 +22,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LayoutViews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity" />
+
     <Button
         android:id="@+id/drawables"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Drawables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_views" />
 
     <Button
+        android:id="@+id/selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawable Selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawables" />
+
+    <Button
+        android:id="@+id/dimension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dimensions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selector" />
+  
+      <Button
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Viewpager"
-        app:layout_constraintTop_toBottomOf="@+id/drawables" />
+        app:layout_constraintTop_toBottomOf="@+id/dimension" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
