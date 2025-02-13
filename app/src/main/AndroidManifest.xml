@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MainApp"
         tools:targetApi="31">
         <activity
+            android:name=".SnackbarFab.SnackbarFabTask"
+            android:exported="false" />
+        <activity
             android:name=".AppbarToolbarTasks.CollapsingToolBarTask"
             android:exported="false" />
         <activity

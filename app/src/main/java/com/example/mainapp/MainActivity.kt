@@ -8,6 +8,7 @@ import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.Activity.ActivityTasks
+import com.example.mainapp.SnackbarFab.SnackbarFabTask
 import com.example.mainapp.AppbarToolbarTasks.AppToolSelect
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonAppTool: Button = findViewById(R.id.Appbar_Toolbar)
+        val buttonSnackbar: Button = findViewById(R.id.snackbar_fab)
+        buttonSnackbar.setOnClickListener {
+            val intent8 = Intent(this, SnackbarFabTask::class.java)
+            startActivity(intent8)
+
+          val buttonAppTool: Button = findViewById(R.id.Appbar_Toolbar)
         buttonAppTool.setOnClickListener {
             val intentAppTool = Intent(this, AppToolSelect::class.java)
             startActivity(intentAppTool)
