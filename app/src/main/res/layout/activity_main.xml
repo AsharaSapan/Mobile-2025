@@ -60,5 +60,11 @@
         android:text="Viewpager"
         app:layout_constraintTop_toBottomOf="@+id/dimension" />
 
+    <Button
+        android:id="@+id/fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fonts"
+        app:layout_constraintTop_toBottomOf="@+id/dimension" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

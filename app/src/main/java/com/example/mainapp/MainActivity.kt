@@ -8,11 +8,19 @@ import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.Activity.ActivityTasks
+import com.example.mainapp.Fonts.FontsTask
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val buttonFonts: Button = findViewById(R.id.fonts)
+        buttonFonts.setOnClickListener {
+            val intent6 = Intent(this, FontsTask::class.java)
+            startActivity(intent6)
+        }
+
 
         val buttonSix: Button = findViewById(R.id.viewpager)
         buttonSix.setOnClickListener {
