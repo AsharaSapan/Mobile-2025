@@ -8,11 +8,18 @@ import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.Activity.ActivityTasks
+import com.example.mainapp.SnackbarFab.SnackbarFabTask
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val buttonSnackbar: Button = findViewById(R.id.snackbar_fab)
+        buttonSnackbar.setOnClickListener {
+            val intent8 = Intent(this, SnackbarFabTask::class.java)
+            startActivity(intent8)
+        }
 
         val buttonSix: Button = findViewById(R.id.viewpager)
         buttonSix.setOnClickListener {

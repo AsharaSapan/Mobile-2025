@@ -52,12 +52,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selector" />
-  
-      <Button
+
+    <Button
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Viewpager"
+        app:layout_constraintTop_toBottomOf="@+id/dimension" />
+
+    <Button
+        android:id="@+id/snackbar_fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snackbar Fab"
         app:layout_constraintTop_toBottomOf="@+id/dimension" />
 
 
