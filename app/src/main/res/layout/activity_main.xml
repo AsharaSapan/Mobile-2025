@@ -52,8 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selector" />
-  
-      <Button
+
+    <Button
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,5 +66,19 @@
         android:layout_height="wrap_content"
         android:text="Fonts"
         app:layout_constraintTop_toBottomOf="@+id/dimension" />
+    <Button
+        android:id="@+id/appbar_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appbar-Toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager" />
+    <Button
+        android:id="@+id/snackbar_fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snackbar Fab"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_Toolbar" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
