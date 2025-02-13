@@ -8,11 +8,18 @@ import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.Activity.ActivityTasks
+import com.example.mainapp.AppbarToolbarTasks.AppToolSelect
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val buttonAppTool: Button = findViewById(R.id.Appbar_Toolbar)
+        buttonAppTool.setOnClickListener {
+            val intentAppTool = Intent(this, AppToolSelect::class.java)
+            startActivity(intentAppTool)
+        }
 
         val buttonSix: Button = findViewById(R.id.viewpager)
         buttonSix.setOnClickListener {
