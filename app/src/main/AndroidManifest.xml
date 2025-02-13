@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MainApp"
         tools:targetApi="31">
         <activity
+            android:name=".Dialogs.DialogsTask"
+            android:exported="false" />
+        <activity
             android:name=".ViewpagerTask"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
         <activity
             android:name=".Selector_Tasks.DrawableSelectorTask"
             android:exported="false" />
-         <activity
+        <activity
             android:name=".Drawables.DrawablesTasks"
             android:exported="false" />
         <activity
@@ -33,15 +36,12 @@
         <activity
             android:name=".LayoutViews.LinearTask"
             android:exported="false" />
-
         <activity
             android:name=".LayoutViews.LayoutTasks"
             android:exported="false" />
-      
         <activity
             android:name=".Activity.DataSend"
             android:exported="false" />
-
         <activity
             android:name=".Activity.LogcatTask"
             android:exported="false" />

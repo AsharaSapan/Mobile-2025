@@ -58,6 +58,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Viewpager"
+        app:layout_constraintTop_toBottomOf="@+id/dimension" />\
+
+    <Button
+        android:id="@+id/dialogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialogs"
         app:layout_constraintTop_toBottomOf="@+id/dimension" />
 
 
