@@ -7,50 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".AppbarToolbarTasks.ToolBarTask">
 
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/newGroup"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#403D3D"
+        android:background="#2FAF5E"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:menu="@menu/mymenu"
         app:title="WhatsApp"
-        app:titleTextColor="#B1B3B4"
+        app:titleTextColor="#E6DFDF"
         tools:ignore="MissingConstraints" />
-
-
-    <ImageView
-        android:id="@+id/message"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        app:layout_constraintEnd_toStartOf="@+id/edit"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        app:srcCompat="@drawable/chat_toolbar"
-        app:tint="@color/white" />
-
-    <ImageView
-        android:id="@+id/edit"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/create_task"
-        app:tint="@color/white" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

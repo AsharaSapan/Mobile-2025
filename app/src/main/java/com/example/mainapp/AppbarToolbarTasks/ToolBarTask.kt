@@ -15,10 +15,7 @@ class ToolBarTask : AppCompatActivity() {
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
 
-        val imgView:ImageView=findViewById(R.id.message)
-        imgView.setOnClickListener {
-            Toast.makeText(getApplicationContext(),"Message Popup",Toast.LENGTH_SHORT).show();
-        }
+        
 
     }
 

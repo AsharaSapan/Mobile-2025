@@ -22,6 +22,7 @@
             android:name=".AppbarToolbarTasks.ToolBarTask"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:name=".AppbarToolbarTasks.AppBarTask"
             android:exported="false" />
         <activity
