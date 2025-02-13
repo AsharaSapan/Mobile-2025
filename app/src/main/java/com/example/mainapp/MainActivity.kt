@@ -22,13 +22,6 @@ class MainActivity : AppCompatActivity() {
             val intent6 = Intent(this, FontsTask::class.java)
             startActivity(intent6)
         }
-
-
-        val buttonSix: Button = findViewById(R.id.viewpager)
-        buttonSix.setOnClickListener {
-            val intent6 = Intent(this, ViewpagerTask::class.java)
-            startActivity(intent6)
-        }
         val buttonSnackbar: Button = findViewById(R.id.snackbar_fab)
         buttonSnackbar.setOnClickListener {
             val intent8 = Intent(this, SnackbarFabTask::class.java)

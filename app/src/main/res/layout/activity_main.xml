@@ -60,12 +60,7 @@
         android:text="Viewpager"
         app:layout_constraintTop_toBottomOf="@+id/dimension" />
 
-    <Button
-        android:id="@+id/fonts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fonts"
-        app:layout_constraintTop_toBottomOf="@+id/dimension" />
+
     <Button
         android:id="@+id/appbar_Toolbar"
         android:layout_width="match_parent"
@@ -79,6 +74,12 @@
         android:text="Snackbar Fab"
         app:layout_constraintTop_toBottomOf="@+id/appbar_Toolbar" />
 
+    <Button
+        android:id="@+id/fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fonts"
+        app:layout_constraintTop_toBottomOf="@+id/snackbar_fab" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
