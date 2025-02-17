@@ -11,11 +11,18 @@ import com.example.mainapp.Activity.ActivityTasks
 import com.example.mainapp.Fonts.FontsTask
 import com.example.mainapp.SnackbarFab.SnackbarFabTask
 import com.example.mainapp.AppbarToolbarTasks.AppToolSelect
+import com.example.mainapp.Fragments.FragmentsTask
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val buttonFragments: Button = findViewById(R.id.fragments)
+        buttonFragments.setOnClickListener {
+            val intent9 = Intent(this, FragmentsTask::class.java)
+            startActivity(intent9)
+        }
 
         val buttonFonts: Button = findViewById(R.id.fonts)
         buttonFonts.setOnClickListener {

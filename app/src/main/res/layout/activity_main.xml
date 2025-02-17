@@ -67,6 +67,7 @@
         android:layout_height="wrap_content"
         android:text="Appbar-Toolbar"
         app:layout_constraintTop_toBottomOf="@+id/viewpager" />
+
     <Button
         android:id="@+id/snackbar_fab"
         android:layout_width="match_parent"
@@ -80,6 +81,13 @@
         android:layout_height="wrap_content"
         android:text="Fonts"
         app:layout_constraintTop_toBottomOf="@+id/snackbar_fab" />
+
+    <Button
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments"
+        app:layout_constraintTop_toBottomOf="@+id/fonts"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

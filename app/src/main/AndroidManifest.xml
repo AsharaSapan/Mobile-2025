@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MainApp"
         tools:targetApi="31">
         <activity
+            android:name=".Fragments.FragmentsTask"
+            android:exported="false" />
+        <activity
             android:name=".Fonts.FontsTask"
             android:exported="false" />
         <activity
@@ -28,9 +31,9 @@
             android:name=".AppbarToolbarTasks.ToolBarTask"
             android:exported="false" />
         <activity
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:name=".AppbarToolbarTasks.AppBarTask"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".ViewpagerTask"
             android:exported="false" />
