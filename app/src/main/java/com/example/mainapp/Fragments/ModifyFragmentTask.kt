@@ -1,6 +1,7 @@
 package com.example.mainapp.Fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,6 +25,7 @@ class ModifyFragmentTask : Fragment() {
         editTextGet = view.findViewById(R.id.text_modify)
         buttonModify = view.findViewById(R.id.button_modify)
 
+
         parentFragmentManager.setFragmentResultListener("sendToModify", this) { _, bundle ->
             val textGetFromA = bundle.getString("sendMsg")
             editTextGet.setText(textGetFromA)
@@ -32,13 +34,18 @@ class ModifyFragmentTask : Fragment() {
         parentFragmentManager.setFragmentResultListener("deleteModify", this) { _, _ ->
             editTextGet.text.clear()
         }
-//        buttonModify.setOnClickListener {
-//            val modifiedText = editTextGet.text.toString()
-//            val bundle = Bundle().apply {
-//                putString("modifiedMsg", modifiedText)
-//            }
-//            parentFragmentManager.setFragmentResult("modifiedMsg", bundle)
-//        }
+
+        //Modified message is sending to A and C
+        buttonModify.setOnClickListener {
+            Log.d("msg", "Message is sending to A")
+            val modifiedText = editTextGet.text.toString()
+            val bundle = Bundle().apply {
+                putString("modifiedMsg", modifiedText)
+            }
+            parentFragmentManager.setFragmentResult("modifiedMsg", bundle)
+            parentFragmentManager.setFragmentResult("modifiedMsgShow", bundle)
+
+        }
         return view
     }
 

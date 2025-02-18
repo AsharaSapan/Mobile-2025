@@ -16,10 +16,10 @@ class FragmentsTask : AppCompatActivity() {
         val tabLayout_fragments: TabLayout = findViewById(R.id.tabLayout_fragments)
         val viewPager_fragments: ViewPager2 = findViewById(R.id.viewpager2_fragments)
 
-        val adapter=AdapterViewpager(this)
-        viewPager_fragments.adapter=adapter
+        val adapter = AdapterViewpager(this)
+        viewPager_fragments.adapter = adapter
 
-        TabLayoutMediator(tabLayout_fragments,viewPager_fragments) { tab, position ->
+        TabLayoutMediator(tabLayout_fragments, viewPager_fragments) { tab, position ->
             tab.text = when (position) {
                 0 -> "Fragment A"
                 1 -> "Fragment B"

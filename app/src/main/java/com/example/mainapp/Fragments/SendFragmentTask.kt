@@ -32,17 +32,19 @@ class SendFragmentTask : Fragment() {
             parentFragmentManager.setFragmentResult("sendToModify", bundle)
             parentFragmentManager.setFragmentResult("sendToShow", bundle)
         }
-//        parentFragmentManager.setFragmentResultListener(
-//            "modifiedMsg",
-//            this
-//        ) { _, bundle ->
-//            val textChange = bundle.getString("modifiedMsg")
-//            editTextSend.text = textChange
-//        }
+
+        parentFragmentManager.setFragmentResultListener(
+            "modifiedMsg",
+            this
+        ) { _, bundle ->
+            val textChange = bundle.getString("modifiedMsg")
+            editTextSend.setText(textChange)
+        }
+
+        //Clearing text from reset button in ShowFragment
         parentFragmentManager.setFragmentResultListener("deleteSend", this) { _, _ ->
             editTextSend.text.clear()
         }
-
         return view
     }
 

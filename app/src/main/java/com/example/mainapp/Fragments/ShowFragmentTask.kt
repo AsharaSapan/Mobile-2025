@@ -23,16 +23,24 @@ class ShowFragmentTask : Fragment() {
         textShow = view.findViewById(R.id.text_show)
         buttonDelete = view.findViewById(R.id.button_delete)
 
+        //Getting data from A
         parentFragmentManager.setFragmentResultListener("sendToShow", this) { _, bundle ->
             val dataFromAb = bundle.getString("sendMsg")?.uppercase()
             textShow.text = dataFromAb
         }
+        //Getting modified data from B
+        parentFragmentManager.setFragmentResultListener("modifiedMsgShow", this) { _, bundle ->
+            val dataFromB = bundle.getString("modifiedMsg")?.uppercase()
+            textShow.text = dataFromB
+        }
 
+        //Resetting all fragments data to empty
         buttonDelete.setOnClickListener {
             textShow.text = ""
             parentFragmentManager.setFragmentResult("deleteSend", Bundle())
             parentFragmentManager.setFragmentResult("deleteModify", Bundle())
         }
+
         return view
     }
 }
