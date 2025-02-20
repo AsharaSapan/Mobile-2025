@@ -8,6 +8,7 @@ import com.example.mainapp.Selector_Tasks.DrawableSelectorTask
 import com.example.mainapp.LayoutViews.LayoutTasks
 import com.example.mainapp.Drawables.DrawablesTasks
 import com.example.mainapp.Activity.ActivityTasks
+import com.example.mainapp.Dialogs.DialogsTask
 import com.example.mainapp.Fonts.FontsTask
 import com.example.mainapp.SnackbarFab.SnackbarFabTask
 import com.example.mainapp.AppbarToolbarTasks.AppToolSelect
@@ -17,6 +18,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val buttonDialog: Button = findViewById(R.id.dialogs)
+        buttonDialog.setOnClickListener {
+            val intent6 = Intent(this, DialogsTask::class.java)
+            startActivity(intent6)
+        }
+
+        val buttonSix: Button = findViewById(R.id.viewpager)
+        buttonSix.setOnClickListener {
+            val intent6 = Intent(this, ViewpagerTask::class.java)
+        }
         val buttonFonts: Button = findViewById(R.id.fonts)
         buttonFonts.setOnClickListener {
             val intent6 = Intent(this, FontsTask::class.java)
