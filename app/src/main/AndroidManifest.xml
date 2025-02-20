@@ -16,6 +16,25 @@
             android:name=".Dialogs.DialogsTask"
             android:exported="false" />
         <activity
+            android:name=".Fonts.FontsTask"
+            android:exported="false" />
+        <activity
+            android:name=".SnackbarFab.SnackbarFabTask"
+            android:exported="false" />
+        <activity
+            android:name=".AppbarToolbarTasks.CollapsingToolBarTask"
+            android:exported="false" />
+        <activity
+            android:name=".AppbarToolbarTasks.AppToolSelect"
+            android:exported="false" />
+        <activity
+            android:name=".AppbarToolbarTasks.ToolBarTask"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:name=".AppbarToolbarTasks.AppBarTask"
+            android:exported="false" />
+        <activity
             android:name=".ViewpagerTask"
             android:exported="false" />
         <activity
