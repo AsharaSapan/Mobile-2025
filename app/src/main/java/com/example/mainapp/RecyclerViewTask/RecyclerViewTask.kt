@@ -1,16 +1,14 @@
 package com.example.mainapp.RecyclerViewTask
 
 import android.os.Bundle
-import android.view.View
 import android.widget.CheckBox
 import android.widget.EditText
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mainapp.R
+import com.example.mainapp.RecyclerViewTask.adapters.MsgAdapter
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class RecyclerViewTask : AppCompatActivity() {
@@ -32,14 +30,12 @@ class RecyclerViewTask : AppCompatActivity() {
         checkBoxCheck = findViewById(R.id.send_rec_checkbox)
 
         // Initialize RecyclerView and Adapter
-        adapter = MsgAdapter(msgList)
+        adapter = MsgAdapter(mutableListOf())
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
-    }
-    private fun showMsg()
-    {
-        val context=this
 
-    }
+        fabSendMsg.setOnClickListener {
 
+        }
+    }
 }
